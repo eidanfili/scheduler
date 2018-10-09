@@ -1,0 +1,1 @@
+export default FETCH_COURSES = 'FETCH_COURSES';
