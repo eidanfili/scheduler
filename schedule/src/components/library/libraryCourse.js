@@ -9,14 +9,16 @@ import Action from '../action'
         return (
             <div className="library-course">
                 <div className="library-course__title-check">
-                    <label className="library-course__title">Problem Solving</label>
+                    <label className="library-course__title">{ this.props.title }</label>
                     {Icon('fas fa-check', 'library-course__icon')}
                 </div>
                 <Arrow className="libraryCourse__arrow"/>
                 <Action className="libraryCourse__action"/>
                 <div className="library-course__description">
                     <label>Course Description</label>
-                    <p>ching chong Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla facilisis mi, non pellentesque metus consectetur vel. Quisque dictum, lectus vitae dignissim tincidunt, sapien nibh placerat diam, quis blandit enim nulla in felis.</p>
+                    <p>
+                    { this.props.description }
+                    </p>
                 </div>
             </div>
         )

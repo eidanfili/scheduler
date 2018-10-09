@@ -14,18 +14,19 @@ class Library extends Component {
 
     renderCourses() {
         const data = this.props.courses
-
+      
         return data.map((course, index) => {
-            return <LibraryCourse key={index} />
+            return <LibraryCourse {...course}key={index} {...course} />
         })
-            
+
+
     }
 
     render() {
         return(
             <div className="library">
                 <h2>Library</h2>
-                {this.renderCourses}
+                {this.renderCourses()}
             </div>
         )    
     }
