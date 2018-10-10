@@ -16,7 +16,7 @@ import Action from '../action';
                     {Icon('fas fa-check', 'library-course__icon')}
                 </div>
                 <Arrow className="libraryCourse__arrow"/>
-                <Action onClick={this.props.toggleEnrolled(this.props.id)} className="libraryCourse__action"/>
+                <Action onClick={() => this.props.toggleEnrolled(this.props.id)} className="libraryCourse__action"/>
                 <div className="library-course__description">
                     <label>Course Description</label>
                     <p>
