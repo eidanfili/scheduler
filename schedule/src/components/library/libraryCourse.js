@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import * as actions from '../../actions';
 
 import Icon from '../icon';
 import Arrow from '../arrow';
-import Action from '../action'
+import Action from '../action';
 
  class LibraryCourse extends Component {
     render() {
@@ -13,7 +16,7 @@ import Action from '../action'
                     {Icon('fas fa-check', 'library-course__icon')}
                 </div>
                 <Arrow className="libraryCourse__arrow"/>
-                <Action className="libraryCourse__action"/>
+                <Action onClick={this.props.toggleEnrolled(this.props.id)} className="libraryCourse__action"/>
                 <div className="library-course__description">
                     <label>Course Description</label>
                     <p>
@@ -24,4 +27,4 @@ import Action from '../action'
         )
     }
 }
- export default LibraryCourse; 
+ export default connect(null, actions)(LibraryCourse); 

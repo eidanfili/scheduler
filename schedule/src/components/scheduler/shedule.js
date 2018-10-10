@@ -12,7 +12,7 @@ class Schedule extends Component {
         
         return data.map((course, index) => {
             if (course.enrolled){
-            return <ScheduleCourse key={index} {...course} />
+                return <ScheduleCourse key={index} {...course} />
             }
         })
     }
@@ -20,7 +20,7 @@ class Schedule extends Component {
         return(
             <div className="schedule">
                 <h2>Schedule</h2>
-                {this.renderCourses}
+                {this.renderCourses()}
                 <ProgressTracker/>
                 <Gradient />
             </div>

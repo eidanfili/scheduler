@@ -12,19 +12,19 @@ class Action extends Component {
     
     
     render() {
+        // return(
+        //     <a
+        //     id='action'
+        //     onClick={ () => this.handleAction()}
+        //     className={`${this.props.className} action`}>
+        //   </a>
+        // )
         return(
-            <a
-            id='action'
-            onClick={ () => this.handleAction()}
-            className={`${this.props.className} action`}>
-          </a>
+            <button onClick={ () => this.props.onClick()} className={`${this.props.className} action`}>
+            { Icon ('fas fa-plus-circle')}
+           {/*fas fa-times-circle*/}
+           </button>
         )
-        //return(
-            //<button onClick={ () => this.props.onClick()} className={`${this.props.className} action`}>
-            //{ Icon ('fas fa-plus-circle')}
-           // {/*fas fa-times-circle*/}
-           // </button>
-        //)
     }
 }
 
