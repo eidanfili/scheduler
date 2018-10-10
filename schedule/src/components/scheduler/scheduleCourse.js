@@ -9,7 +9,7 @@ import Action from '../action';
     render() {
         return (
             <div className="schedule-course">
-                <label classname="schedule-course__label">{this.props.title}</label>
+                <label className="schedule-course__label">{this.props.title}</label>
                 <Action onClick={() => this.props.toggleEnrolled(this.props.id)} className="schedule-course__action" />
             </div>
         )
