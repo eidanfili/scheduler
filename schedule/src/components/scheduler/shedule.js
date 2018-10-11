@@ -22,7 +22,7 @@ class Schedule extends Component {
         this.amountEnrolled = 0
         return(
             <div className="schedule">
-                <h2>Schedule</h2>
+                <h2>My Schedule</h2>
                 {this.renderCourses()}
                 <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled}/>
                 <Gradient />
